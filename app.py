@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import joblib
 
 # Load and clean the dataset
-df = pd.read_csv(r"C:\Users\psalm\OneDrive\Documentos\Desktop\Final project\diamonds.csv")
+df = pd.read_csv("diamonds.csv")
 if 'Unnamed: 0' in df.columns:
     df = df.drop('Unnamed: 0', axis=1)
 
